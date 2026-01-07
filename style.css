@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Speed dialer  */
+.speed-Dial{
+  position: fixed;
+  bottom: 4rem;
+  right: .4rem;
+  z-index: 1000;
+}
+
+#scrollToTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: .5rem;
+  background-color: #0a2b4a;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 99;
+  height: 2.5rem;
+  width: 2.5rem;
+}

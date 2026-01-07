@@ -1,24 +1,51 @@
-
-<!-- ================= CONTACT PAGE ================= -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Contact — Sumana Packaging</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-<style>
-  body { font-family: Arial, sans-serif; background:#f7f7f7; }
-  .contact-box { background:white; padding:40px; border-radius:12px; }
-</style>
+  <meta charset="UTF-8">
+  <title>Contact Us | Sumana Packaging</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Sumana Packaging for EPE Foam, Bubble Roll, PP Box and packaging solutions.">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body { font-family: Arial, sans-serif; }
+
+    .contact-section {
+      background: #0a2b4a;
+      color: white;
+    }
+
+    .contact-section small {
+      letter-spacing: 2px;
+    }
+
+    .contact-info div {
+      margin-bottom: 15px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      border-radius: 12px;
+      padding: 14px;
+    }
+
+    .contact-form button {
+      border-radius: 12px;
+    }
+
+    iframe {
+      filter: grayscale(100%);
+    }
+  </style>
 </head>
 <body>
-
-<nav class="navbar navbar-expand-lg bg-white shadow-sm py-3">
+<!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
   <div class="container">
     <a class="navbar-brand fw-bold" href="#">SUMANA PACKAGING</a>
-    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menuC"><span class="navbar-toggler-icon"></span></button>
-    <div class="collapse navbar-collapse" id="menuC">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="/pages/products.html">Products</a></li>
@@ -29,33 +56,77 @@
   </div>
 </nav>
 
-<section class="container py-5">
-  <div class="row justify-content-center">
-    <div class="col-lg-6">
-      <div class="contact-box shadow">
-        <h2 class="mb-4 text-center">Get in Touch</h2>
-        <form>
-          <div class="mb-3">
-            <label>Name</label>
-            <input class="form-control" />
+<!-- CONTACT SECTION -->
+<section class="contact-section py-5">
+  <div class="container">
+    <div class="row align-items-center g-5">
+
+      <!-- LEFT -->
+      <div class="col-lg-5">
+        <small class="text-success text-uppercase">Contact</small>
+        <h2 class="fw-bold mb-4">Feel Free to Reach Out</h2>
+
+        <div class="contact-info">
+          <div class="d-flex">
+            <span class="me-3">🏠</span>
+            <div>
+              <strong>Address</strong><br>
+              <small>F 63 Site-c, Surajpur Industrial Area, Graeter Noida, UP, 201306.</small>
+            </div>
           </div>
-          <div class="mb-3">
-            <label>Email</label>
-            <input type="email" class="form-control" />
+
+          <div class="d-flex">
+            <span class="me-3">📞</span>
+            <div>
+              <strong>Mobile</strong><br>
+              <small>+91 9540731671</small> <span style="font-size:1.2rem">/</span>
+              <small>+91 9871674073</small>
+            </div>
           </div>
-          <div class="mb-3">
-            <label>Phone</label>
-            <input class="form-control" />
+
+          <div class="d-flex">
+            <span class="me-3">✉️</span>
+            <div>
+              <strong>Email</strong><br>
+              <small>sumanapackaging2024@gmail.com</small>
+            </div>
           </div>
-          <div class="mb-3">
-            <label>Message</label>
-            <textarea class="form-control" rows="4"></textarea>
+
+          <div class="d-flex">
+            <span class="me-3">⏰</span>
+            <div>
+              <strong>Timing</strong><br>
+              <small>Mon – Sat : 9:00 AM – 5:00 PM</small>
+            </div>
           </div>
-          <button class="btn btn-primary w-100">Submit</button>
+        </div>
+      </div>
+
+      <!-- RIGHT FORM -->
+      <div class="col-lg-7">
+        <form class="contact-form bg-white p-4 shadow text-dark">
+          <input type="text" class="form-control mb-3" placeholder="Full Name" required>
+          <input type="email" class="form-control mb-3" placeholder="Email" required>
+          <textarea class="form-control mb-3" rows="4" placeholder="Message" required></textarea>
+          <button class="btn btn-dark w-100 py-3">Send</button>
         </form>
       </div>
+
     </div>
   </div>
 </section>
+
+<!-- MAP -->
+<section>
+  <iframe 
+    src="https://www.google.com/maps?q=New+Delhi&output=embed"
+    width="100%" 
+    height="350" 
+    style="border:0;" 
+    loading="lazy">
+  </iframe>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
